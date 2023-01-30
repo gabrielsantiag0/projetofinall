@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
 </head>
@@ -11,9 +12,68 @@
     <header>
         <div class="conteudoMenu">
             <nav id="logo"><img src="img/logoPequena.png" alt="Logo"></nav>
-            <nav id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a></nav>
+            <nav id="botaoMenu"><div ng-app="meuApp" ng-controller="controlador">
+                <button ng-click="minhaFuncao()">Menu</button>
+                <div ng-show="exibir">
+                 <a id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a>
+                 </div></div>
+                 <script>
+                    var app = angular.module('meuApp',[]);
+                app.controller('controlador',function($scope){
+                    $scope.exibir = false;
+                    $scope.minhaFuncao = function(){
+                        $scope.exibir = !$scope.exibir;
+                    }
+                });</script></nav>
         </div>
     </header>
+    <main>
+        <div class="produto1">
+            <div class="img1"><img src="img/energiaSolar.jpg" alt=""></div>
+
+            <div class="texto1"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem reic <br> Lorem ipsum, dolor sit amet consectetur <br>çLorem ipsum dolor </p>
+                            <img src="img/linhabranca.jpg" alt="">
+            </div>
+        </div>
+        <div class="produto2">
+            <div class="img_visao">
+                <ul>
+                    <li>
+                        <img src="img/manutençaão.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="img_visao">
+                <ul>
+                    <li>
+                        <img src="img/consultoria e avaliação.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="img_visao">
+                <ul>
+                    <li>
+                        <img src="img/projeto e instalação.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+           <div class="visao"><h1>VISÃO</h1></div> 
+           <div class="visao"><h1>VISÃO</h1></div> 
+           <div class="visao"><h1>VISÃO</h1></div> 
+           <div class="texto"><h1>TEXTO</h1></div>
+           <div class="texto"><h1>TEXTO</h1></div>
+           <div class="texto"><h1>TEXTO</h1></div>
+        </div>
+        <nav class="produto3">
+            <div class="ajuste">
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main>
 </nav>
 </body>
 </html>

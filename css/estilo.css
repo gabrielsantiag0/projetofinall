@@ -3,6 +3,16 @@ nav{
 }
 /*----- nav FINAL----------*/
 /*----- header INICIO------ */
+/*--------- botao INICIO-----*/
+#botaoMenu{
+    margin-top: 15px;
+    margin-right: 35px;
+ text-align: right;  
+}
+#botaoMenu a{
+    font-size: 26px;
+}
+/*-------- botao FINAL------ */
 *{
     padding: 0;
     margin: 0;
@@ -35,8 +45,9 @@ nav{
     color: black;
     text-decoration: none;
 }
-#textoheader a:houver{
-    
+#textoheader a:hover{
+    padding: 10px;
+    border: 1px solid black;
 }
 /*---- header FINAL-------*/
 /*---- main INICIO--------*/
@@ -45,11 +56,95 @@ main{
 }
 /*---- main FINAL---------*/
 /*---- produto1 INICIO-----*/
+.produto1{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.img1{
+    padding: 5px;
+    width: max-content;
+}
+.img1 img{
+    width: 70%;
+}
+.texto1{
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+.texto1 img{
+    padding-top: 5px;
+    justify-content: center;
 
+}
 /*---- produto1 FINAL------*/
 /*---- produto2 INICIO-----*/
+.produto2{
+    background-color: rgb(236, 236, 53);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh ;
+}
+.img_visao{
+    margin-top: 6px;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;   
+    border: 1px solid brown; 
+}
 
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+li{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.produto2 h1{
+    margin-top: 5px;
+    text-align: center;
+}
 /*---- produto2 FINAL------*/
 /*---- procuto 3 INICIO---*/
+.produto3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 25vh;
+    border: 1px solid brown;
+}
+
+.ajuste ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.ajuste li{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
 
 /*---- produto 3 FINAL-----*/
+/* <div ng-app="meuApp" ng-controller="controlador">
+<button ng-click="minhaFuncao()">Menu</button>
+<div ng-show="exibir">
+    <img src="img/consultoria e avaliação.jpg" alt="">
+     <h4>Pizza</h4>
+     <h4>Pasta</h4>
+     <h4>Peixe</h4>
+ </div></div>
+ <script>
+    var app = angular.module('meuApp',[]);
+app.controller('controlador',function($scope){
+    $scope.exibir = false;
+    $scope.minhaFuncao = function(){
+        $scope.exibir = !$scope.exibir;
+    }
+});</script>
+id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a> */
