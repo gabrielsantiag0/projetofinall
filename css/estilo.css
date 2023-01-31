@@ -12,6 +12,10 @@ nav{
 #botaoMenu a{
     font-size: 26px;
 }
+#botao{
+    height: 30px;
+    width: 60px;
+}
 /*-------- botao FINAL------ */
 *{
     padding: 0;
@@ -112,13 +116,6 @@ li{
 }
 /*---- produto2 FINAL------*/
 /*---- procuto 3 INICIO---*/
-.produto3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15vh 25vh;
-    border: 1px solid brown;
-}
-
 .ajuste ul{
     display: flex;
     flex-flow: row nowrap;
@@ -129,8 +126,174 @@ li{
     display: flex;
     flex-flow: row nowrap;
 }
+.produto3servico{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20%;
+}
+.produto3servico p{
+    font-size: 40px;
+    text-align: center;
+}
+.produto3servico img{
+    margin-top: 15px;
+    margin-left: 40%;
+    width: max-content;
+    height: 50px;
+}
+.ajuste{
+    position: relative;
+    width: max-content;
+}
+.area_servicos{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr ;
+    grid-template-rows: 8vh 15vh 25vh 25vh;
+}
 
+.paragrafo{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    text-align: center;
+}
+
+.img_linha{
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;    
+}
+ 
+.imagem_servicos_bloco{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.imagem_servicos_bloco a{
+    display: flex;
+    justify-items: center;
+}
+
+.imagem_servicos_bloco p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.imagem_servicos_linha{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.imagem_servicos_linha a{
+    display: flex;
+}
+
+.imagem_servicos_linha p{
+    font-size: 15px;
+}
 /*---- produto 3 FINAL-----*/
+/*----- fundo cinza INICIO---*/
+
+.fundocinza{
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+#sobrenos{
+    display: grid;
+    grid-template-rows: 20% 20% 40%;
+}
+#sobrenos h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+#sobrenos img{
+    margin-top: 15px;
+    margin-left: 30%;
+    width: max-content;
+    height: 50px; 
+}
+#sobrenos p{
+    text-align: center;
+}
+.imgfundocinza img{
+    margin: 20px;
+    margin-left: 25%;
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+}
+/*------- fundo cinza FINAL-------*/
+/*---------- produtos4 INICIO-------------- */
+.produtos4{
+    display: grid;
+    grid-template-rows: 10% 10%;
+}
+#produto4{
+
+}
+
+#imgproduto4 img{
+    margin-top: 6px;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;   
+}
+#produto4 h1{
+    text-align: center;
+    margin-top: 5px;
+}
+#produto4 img{
+    margin-left: 45%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    height: 40px;
+}
+.produtos4 a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.produto4link{
+    margin: 15px;
+    text-align: center;
+}
+.produto4link a{
+    padding-top: 5px;
+        margin: 15px;
+    
+}
+.produto4link a:hover{
+    border: 1px solid black;
+
+}
+#imgproduto4 img{
+    margin-top: 25px;
+    height: 100px;
+    width: 200px;
+}
+.botaoprodutos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+/*-----------produtos4 FINAL--------- */
+
+
+
+
 /* <div ng-app="meuApp" ng-controller="controlador">
 <button ng-click="minhaFuncao()">Menu</button>
 <div ng-show="exibir">
@@ -148,3 +311,31 @@ app.controller('controlador',function($scope){
     }
 });</script>
 id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a> */
+/* <div class="produto4link"><a href="#">AR CONDICIONADO</a><a href="#">AR CONDICIONADO INVERTER</a><a href="#">MULTI SLIP</a><a href="#">ENERGIA SOLAR</a></div> */
+/* <div id="imgproduto4">
+<ul>
+    <li>
+        <a href=""><img src="img/linha.png" alt=""></a>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a href=""><img src="img/linha.png" alt=""></a>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a href=""><img src="img/linha.png" alt=""></a>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a href=""><img src="img/linha.png" alt=""></a>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a href=""><img src="img/linha.png" alt=""></a>
+    </li>
+</ul>
+</div> */

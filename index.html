@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Document</title>
+    <title>AR CONDICIONADO</title>
 </head>
 <body>
 <nav>
@@ -13,7 +13,7 @@
         <div class="conteudoMenu">
             <nav id="logo"><img src="img/logoPequena.png" alt="Logo"></nav>
             <nav id="botaoMenu"><div ng-app="meuApp" ng-controller="controlador">
-                <button ng-click="minhaFuncao()">Menu</button>
+                <button ng-click="minhaFuncao()" id="botao">Menu</button>
                 <div ng-show="exibir">
                  <a id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a>
                  </div></div>
@@ -64,15 +64,85 @@
            <div class="texto"><h1>TEXTO</h1></div>
            <div class="texto"><h1>TEXTO</h1></div>
         </div>
-        <nav class="produto3">
-            <div class="ajuste">
+        <div class="produto3servico">
+            <p>Serviços</p>
+            <img src="img/linha.svg" alt="">
+        </div>
+        <div class="area_servicos">
+            <div class="img_linha"><div>
+            </div>
                 <ul>
                     <li>
-                        
+                        <img class="" src="img/linha1.png" alt="">
                     </li>
                 </ul>
             </div>
-        </nav>
+            <div class="imagem_servicos_bloco">
+                <ul>
+                    <li>
+                        <a href=""><img src="img/ar2.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagem_servicos_linha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere, unde asperiores, cupiditate libero saepe temporibus .</p>
+            </div>
+            <div class="imagem_servicos_linha">
+                <ul>
+                    <li>
+                        <a href=""><img src="img/ar3.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagem_servicos_linha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere, unde asperiores, cupiditate libero saepe temporibus .</p>
+            </div>
+            <div class="imagem_servicos_linha">
+                <ul>
+                    <li>
+                        <a href=""><img src="img/ar4.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagem_servicos_bloco">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium ipsam adipisci odit sit quo quos libero sunt illo iusto provident blanditiis, facere, nostrum tempore officiis? Velit commodi sunt tenetur.</p>
+            </div>
+            <div class="imagem_servicos_linha">
+                <ul>
+                    <li>
+                        <a href=""><img src="img/ar5.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagem_servicos_linha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere, unde asperiores, cupiditate libero saepe temporibus .</p>
+            </div>
+            <div class="imagem_servicos_linha">
+                <ul>
+                    <li>
+                        <a href=""><img src="img/ar6.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagem_servicos_linha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere, unde asperiores, cupiditate libero saepe temporibus .</p>
+            </div>
+        </div>
+        <div class="fundocinza">
+                <div id="sobrenos"><h1>SOBRE NÓS</h1>
+                <img src="img/linha.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ab vitae, a officia maiores consequuntur saepe fugit accusamus <br> eaque repellendus molestias! <br> Consequatur non exercitationem soluta corporis eum qui optio nobis sint?</p>
+            </div>
+                <div class="imgfundocinza">
+                    <img src="img/arcondicionado.jpg" alt="">
+                </div>
+        </div>
+        <div class="produtos4">
+            <div id="produto4">
+                    <h1>PRODUTOS</h1>
+                    <img src="img/linha.svg" alt=""></div>
+        </div>
+      
     </main>
 </nav>
 </body>
