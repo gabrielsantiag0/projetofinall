@@ -313,20 +313,20 @@ li{
 .canto{
     margin-left: 50px;
 }
-.img5ars2{
+/* ----------formulario INICIO------ */
+.form{
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#formulario img{
+    width: 300px;
+}
+.endereco{
     display:flex ;
     justify-content: space-around;
 }
-.img5ars2 img{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    margin-top: 5px;
-    border: 3px solid black;
- }
-
- 
+/*----------- formulario FINAL--------- */
 /*-------- linkangular FINAL---------- */
 
 
