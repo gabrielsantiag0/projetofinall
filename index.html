@@ -7,24 +7,14 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>AR CONDICIONADO</title>
 </head>
-<body>
+<body  ng-app="meuApp" ng-controller="meuController">
 <nav>
     <header>
         <div class="conteudoMenu">
             <nav id="logo"><img src="img/logoPequena.png" alt="Logo"></nav>
-            <nav id="botaoMenu"><div ng-app="meuApp" ng-controller="controlador">
-                <button ng-click="minhaFuncao()" id="botao">Menu</button>
-                <div ng-show="exibir">
+                <div>
                  <a id="textoheader"><a id="home" href="#">Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a>
-                 </div></div>
-                 <script>
-                    var app = angular.module('meuApp',[]);
-                app.controller('controlador',function($scope){
-                    $scope.exibir = false;
-                    $scope.minhaFuncao = function(){
-                        $scope.exibir = !$scope.exibir;
-                    }
-                });</script></nav>
+                 </div></div>             
         </div>
     </header>
     <main>
@@ -142,8 +132,112 @@
                     <h1>PRODUTOS</h1>
                     <img src="img/linha.svg" alt=""></div>
         </div>
-      
+             <nav>
+                    <div id="linkangular">
+                        <div ng-mouseover="funcaoArcondicionado()">
+                            Ar-condicionado
+                        </div>
+                        <div ng-mouseover="funcaoInverter()">
+                            Ar-condicionado Inverter
+                        </div>
+                        <div ng-mouseover="funcaoMultisplit()">
+                            Multi Split
+                        </div>
+                        <div ng-mouseover="funcaoEnergiasolar()">
+                            Energia solar
+                        </div>
+                    </div>
+                        <div class="img5ars" ng-show="arcondicionado">
+                            <div>
+                                <img src="img/arcondiconadooo.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/arcondicionadoo2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/arcondicionadooo3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/arcondicionadooo4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/arcondicionadooo5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="img5ars" ng-show="inverter">
+                            <div>
+                                <img src="img/inverter1.jfif" alt="">
+                            </div>
+                            <div>
+                                <img src="img/inverter2.jfif" alt="">
+                            </div>
+                            <div>
+                                <img src="img/inverter3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/inverter4.jfif" alt="">
+                            </div>
+                            <div>
+                                <img src="img/inverter5.jfif" alt="">
+                            </div>
+                        </div>
+                        <div class="img5ars" ng-show="multisplit">
+                            <div>
+                                <img src="img/multisplit1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/multisplit2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/multisplit3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/multisplit4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/multisplit5.jpg" alt="">
+                            </div>
+                        </div>
+             </nav>
     </main>
 </nav>
 </body>
+<script>
+    var app = angular.module('meuApp', []);
+         app.controller('meuController', function($scope) {
+             $scope.arcondicionado = true;
+             $scope.inverter = false;
+             $scope.multisplit = false;
+             $scope.energiasolar = false;
+             
+             $scope.funcaoArcondicionado = function() {
+                 $scope.arcondicionado = true;
+                 $scope.inverter = false;
+                 $scope.energiasolar = false;
+                 $scope.multisplit = false;
+             }
+ 
+             $scope.funcaoInverter = function() {
+                 $scope.inverter = true;
+                 $scope.arcondicionado = false;
+                 $scope.energiasolar = false;
+                 $scope.multisplit = false;
+             }
+ 
+             $scope.funcaoMultisplit = function() {
+                 $scope.multisplit = true;
+                 $scope.arcondicionado = false;
+                 $scope.inverter = false;
+                 $scope.energiasolar = false;
+             }
+ 
+             $scope.funcaoEnergiasolar = function() {
+                 $scope.energiasolar = true;
+                 $scope.arcondicionado = false;
+                 $scope.inverter = false;
+                 $scope.multisplit = false;
+             }		
+         });
+ 
+ </script>
 </html>

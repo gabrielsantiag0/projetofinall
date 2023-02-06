@@ -288,8 +288,46 @@ li{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 }
-
 /*-----------produtos4 FINAL--------- */
+/*---------- linkangular INICIO------ */
+#linkangular{
+    text-align: center;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.img5ars{
+    display:flex ;
+    justify-content: space-around;
+
+}
+.img5ars img{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 200px;
+   margin-top: 5px;
+   border: 3px solid black;
+}
+.canto{
+    margin-left: 50px;
+}
+.img5ars2{
+    display:flex ;
+    justify-content: space-around;
+}
+.img5ars2 img{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-top: 5px;
+    border: 3px solid black;
+ }
+
+ 
+/*-------- linkangular FINAL---------- */
 
 
 
@@ -303,6 +341,9 @@ li{
      <h4>Peixe</h4>
  </div></div>
  <script>
+ 
+ background-repeat: no-repeat;
+    background-size: cover;
     var app = angular.module('meuApp',[]);
 app.controller('controlador',function($scope){
     $scope.exibir = false;
