@@ -314,6 +314,21 @@ li{
 .canto{
     margin-left: 50px;
 }
+/*----- parte de cima formulario ------*/
+.contatolinha{
+    text-align: center;
+    justify-content: center;
+}
+.enderercoentreemcontato{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.nosenvieumamensagem{
+    margin-top: 20%;
+    margin-left: 8%;
+}
+
 /* ----------formulario INICIO------ */
 .form{
     background-color: darkgray;
@@ -335,6 +350,77 @@ label{
 }
 #imgform img{
     margin: 15px;
+}
+.nome input{
+    border: none;
+}
+.inputfield{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid black;
+    width: 260px;
+}
+.inputfield input{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+.inputfield input:focus{
+    outline: none;
+}
+#nomeemail{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+#Email{
+    margin-left: 60px;
+    border-bottom: 1px solid black;
+    width: 600px;
+}
+.inputfieldi{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+   
+}
+.inputfieldi input{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+.inputfieldi input:focus{
+    outline: none;
+}
+.botao{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.botao button{
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid gray;
+}
+.socialmidias{
+    display: flex;
+    justify-content: end;
+}
+.facebook{
+    background-color: transparent;
+    border: 4px solid gray;
+}
+.facebook image{
+    height: 50px;
 }
 /*----------- formulario FINAL--------- */
 /*-------- linkangular FINAL---------- */
