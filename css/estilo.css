@@ -412,16 +412,17 @@ label{
     border: 2px solid gray;
 }
 .socialmidias{
+    gap: 6px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+}
+.instagram{
+    height: 10px;
 }
 .facebook{
-    background-color: transparent;
-    border: 4px solid gray;
+    w
 }
-.facebook image{
-    height: 50px;
-}
+
 /*----------- formulario FINAL--------- */
 /*-------- linkangular FINAL---------- */
 
