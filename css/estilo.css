@@ -1,6 +1,4 @@
 /*----- nav INICIO-------*/
-nav{
-}
 /*----- nav FINAL----------*/
 /*----- header INICIO------ */
 /*--------- botao INICIO-----*/
@@ -22,7 +20,9 @@ nav{
     margin: 0;
     box-sizing: border-box;
 }
+
 .conteudoMenu{
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -35,12 +35,16 @@ nav{
     display: block;
     text-align: left;
 }
+.espaco{
+    margin-top: 25px;
+}
 #textoheader{
     margin: 15px;
     padding: 10px;
     text-align: right;
-    font-size: 20px;
+    font-size: 25px;
 }
+
 #home{
     padding: 5px;
 }
@@ -48,6 +52,7 @@ nav{
     margin: 15px;
     color: black;
     text-decoration: none;
+    font-size: 25px;
 }
 #textoheader a:hover{
     padding: 10px;
@@ -91,12 +96,12 @@ main{
     grid-template-rows: 10vh 10vh 10vh ;
 }
 .img_visao{
+    margin-bottom: 15px;
     margin-top: 6px;
     margin-left: 5px;
     display: flex;
     flex-flow: row nowrap;
     justify-self: center;   
-    border: 1px solid brown; 
 }
 
 ul {
@@ -113,6 +118,14 @@ li{
 .produto2 h1{
     margin-top: 5px;
     text-align: center;
+}
+.img_visao img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid brown; 
+}
+.visao{
+    margin-top: 15px;
 }
 /*---- produto2 FINAL------*/
 /*---- procuto 3 INICIO---*/
@@ -140,6 +153,7 @@ li{
     margin-left: 40%;
     width: max-content;
     height: 50px;
+    margin-bottom: 10px;
 }
 .ajuste{
     position: relative;
@@ -148,7 +162,7 @@ li{
 .area_servicos{
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr ;
-    grid-template-rows: 8vh 15vh 25vh 25vh;
+    grid-template-rows: 8vh 25vh 25vh ;
 }
 
 .paragrafo{
@@ -182,14 +196,17 @@ li{
 }
 
 .imagem_servicos_bloco p{
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
 }
+
 
 .imagem_servicos_linha{
     position: relative;
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 15px;  
+    justify-content: center;
 }
 
 
@@ -198,13 +215,14 @@ li{
 }
 
 .imagem_servicos_linha p{
-    font-size: 15px;
+    font-size: 25px;
+    text-align: center;
 }
 /*---- produto 3 FINAL-----*/
 /*----- fundo cinza INICIO---*/
 
 .fundocinza{
-    background-color: darkgray;
+    background-color: #f1f1f1f1;
     display: grid;
     grid-template-columns: 50% 50% ;
 }
@@ -225,11 +243,11 @@ li{
 }
 #sobrenos p{
     text-align: center;
+    font-size: 25px;
 }
 .imgfundocinza img{
     margin: 20px;
     margin-left: 25%;
-    border: 3px solid black;
     height: 400px;
     width: 400px;
 }
@@ -238,6 +256,8 @@ li{
 .produtos4{
     display: grid;
     grid-template-rows: 10% 10%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 #produto4{
 
@@ -331,7 +351,7 @@ li{
 
 /* ----------formulario INICIO------ */
 .form{
-    background-color: darkgray;
+    background-color: #f1f1f1f1;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -353,6 +373,9 @@ label{
 }
 .nome input{
     border: none;
+}
+.nomeemail{
+    justify-content:left;
 }
 .inputfield{
     display: flex;
@@ -379,7 +402,7 @@ label{
     justify-content: space-around;
 }
 #Email{
-    margin-left: 60px;
+    margin-left: 108px;
     border-bottom: 1px solid black;
     width: 600px;
 }
@@ -401,9 +424,11 @@ label{
     outline: none;
 }
 .botao{
+    margin-right: 15px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+
 }
 .botao button{
     height: 30px;
@@ -416,12 +441,20 @@ label{
     display: flex;
     justify-content: center;
 }
-.instagram{
-    height: 10px;
+.icons img{
+    margin: 5px;
+    height: 30px;
+    width: 30px;
 }
-.facebook{
-    w
+
+.icons{
+    margin-top: 25px;
+    display: flex;
+    padding-left: 500px;
 }
+
+
+
 
 /*----------- formulario FINAL--------- */
 /*-------- linkangular FINAL---------- */
