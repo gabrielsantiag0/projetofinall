@@ -1,5 +1,9 @@
 /*----- nav INICIO-------*/
 /*----- nav FINAL----------*/
+nav{
+
+    cursor:url(../img/neve.cur),pointer;
+}
 /*----- header INICIO------ */
 /*--------- botao INICIO-----*/
 #botaoMenu{
@@ -371,6 +375,7 @@ label{
 #imgform img{
     margin: 15px;
 }
+/* começo extilização ENVIE-NOS UMA MENSAGEM */
 .nome input{
     border: none;
 }
@@ -423,12 +428,12 @@ label{
 .inputfieldi input:focus{
     outline: none;
 }
+/* final extilização do ENVIE-NOS UMA MENSAGEM */
 .botao{
     margin-right: 15px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
-
 }
 .botao button{
     height: 30px;
@@ -452,11 +457,202 @@ label{
     display: flex;
     padding-left: 500px;
 }
-
-
-
-
 /*----------- formulario FINAL--------- */
+/* responsivo */
+@media screen and (max-width: 900px) {
+ .body{
+    display: block;
+}
+header{
+    display: block;
+}
+.conteudoMenu{
+    display: block;
+}
+.logo{
+    display: block;
+}
+.logo img{
+    display: block;
+}
+.textoheader{
+    text-align: end;
+    display: block;
+}
+main{
+    display: block;
+}
+
+.produto1{
+    display: block;
+}
+.img1{
+    display: block;
+}
+.texto1{
+    display: block;
+}
+
+.produto2{
+    display: block;
+}
+.visao{
+    display: block;
+    text-align: end;
+}
+.texto{
+    color: yellow;
+}
+.produto3servico{
+    display: block;
+}
+.area_servicos{
+    display: block;
+}
+.fundocinza{
+    display: block;
+}
+.sobrenos{
+    display: block;
+}
+.imgfundocinza{
+    display: block;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.img5ars{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr,1fr,1fr;   
+}
+.produtos4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr,1fr,1fr;
+}
+.form{
+    display: block;
+}
+.nomeemail{
+    display: block;
+    display: flex;
+    justify-items: center;
+}
+.inputbox{
+    display: block;
+    margin: 15px;
+}
+#name{
+    display: block;
+    margin: 15px;
+}
+.inputbox2{
+    display: block;
+    width: 15px;
+    margin-left: 5px;
+}
+.inputbox1{
+    width: 15px;
+    display: block;
+} 
+}
+@media screen and (max-width: 500px) {
+    .body{
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    .conteudoMenu{
+        display: block;
+    }
+    .logo{
+        display: block;
+    }
+    .logo img{
+        display: block;
+    }
+    .textoheader{
+        text-align: end;
+        display: block;
+    }
+    main{
+        display: block;
+    }
+    
+    .produto1{
+        display: block;
+    }
+    .img1{
+        display: block;
+    }
+    .texto1{
+        display: block;
+    }
+    
+    .produto2{
+        display: block;
+    }
+    .visao{
+        display: block;
+        text-align: end;
+    }
+    .texto{
+        color: yellow;
+    }
+    .produto3servico{
+        display: block;
+    }
+    .area_servicos{
+        display: block;
+    }
+    .fundocinza{
+        display: block;
+    }
+    .sobrenos{
+        display: block;
+    }
+    .imgfundocinza{
+        display: block;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .img5ars{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr,1fr,1fr;   
+    }
+    .produtos4{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr,1fr,1fr;
+    }
+    .form{
+        display: block;
+    }
+    .nomeemail{
+        display: block;
+        display: flex;
+        justify-items: center;
+    }
+    .inputbox{
+        display: block;
+        margin: 15px;
+    }
+    #name{
+        display: block;
+        margin: 15px;
+    }
+    .inputbox2{
+        display: block;
+        width: 15px;
+        margin-left: 5px;
+    }
+    .inputbox1{
+        width: 15px;
+        display: block;
+    } 
+}
 /*-------- linkangular FINAL---------- */
 
 
