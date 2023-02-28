@@ -2,7 +2,7 @@
 /*----- nav FINAL----------*/
 nav{
 
-    cursor:url(../img/neve.cur),pointer;
+    /* cursor:url(../img/neve.cur),pointer; */
 }
 /*----- header INICIO------ */
 /*--------- botao INICIO-----*/
@@ -70,16 +70,19 @@ main{
 /*---- main FINAL---------*/
 /*---- produto1 INICIO-----*/
 .produto1{
+    margin-left: 0%;
     margin-top: 15px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 .img1{
-    padding: 5px;
     width: max-content;
+
 }
 .img1 img{
+    margin-right: 5px;
     width: 70%;
+
 }
 .texto1{
     font-size: 40px;
@@ -101,7 +104,7 @@ main{
 }
 .img_visao{
     margin-bottom: 15px;
-    margin-top: 6px;
+    margin-top: 9px;
     margin-left: 5px;
     display: flex;
     flex-flow: row nowrap;
@@ -144,6 +147,7 @@ li{
     flex-flow: row nowrap;
 }
 .produto3servico{
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 20%;
@@ -165,8 +169,9 @@ li{
 }
 .area_servicos{
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr ;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr 2fr;
     grid-template-rows: 8vh 25vh 25vh ;
+    margin-bottom: 15px;
 }
 
 .paragrafo{
@@ -222,6 +227,12 @@ li{
     font-size: 25px;
     text-align: center;
 }
+.imagem_servicos_linha img{
+  width: 180px;
+}
+.imagem_servicos_bloco img{
+    width: 180px;
+}
 /*---- produto 3 FINAL-----*/
 /*----- fundo cinza INICIO---*/
 
@@ -270,9 +281,11 @@ li{
     flex-flow: row nowrap;
     justify-self: center;   
 }
+
 #produto4 h1{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-top: 15px;
 }
 #produto4 img{
     margin-left: 45%;

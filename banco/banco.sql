@@ -23,7 +23,7 @@ USE `ar_condicionado` ;
 -- -----------------------------------------------------
 -- Table `ar_condicionado`.`produtos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ar_condicionado`.`produtos` (
+CREATE TABLE IF NOT EXISTS `produtos` (
   `id_produtos` INT(11) NOT NULL,
   `modelo` VARCHAR(100) NULL DEFAULT NULL,
   `produto` VARCHAR(100) NULL DEFAULT NULL,
