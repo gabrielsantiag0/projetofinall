@@ -51,32 +51,9 @@ hr{
     display: grid;
     grid-template-rows: 10vh 20vh;
 }
-.textocalcular{
 
-}
 .textocalcular p{
     margin-left: 15px;
-}
-.botao{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 10vh ;
-}
-#digiteseucep{
-    border: 2px solid blue;
-}
-#botaoOK{
-    margin-left: 15px;
-    width: 70px;
-    border: 3px solid red;
-    border-radius: 5px;
-}
-.botaoCompra{
-    margin-top: 15px;
-    margin-left: 25px;
-    border: 1px solid red;
-    background-color: red;
-    border-radius: 5px;
 }
 .outrosprodutos{
     display: grid;
@@ -85,3 +62,51 @@ hr{
 .outrosprodutos div{
     border: 1px solid rebeccapurple;
 }
+.botao{
+    margin: 5px;
+    border: 1px solid rgb(143, 134, 134);
+}
+.botao p{
+    margin-left: 15px;
+}
+.calcularfrete{
+    margin-left: 15px;
+    width: 300px;
+    height: 40px;
+}
+.ok{
+    width: 150px;
+    height: 40px;
+}
+.ok button{
+    
+    border-radius: 5px;
+    background-color: red;
+
+}
+.botaocompra{
+    display: flex;
+    justify-content: space-around
+}
+.comprar{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.comprar button{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+}
+.estrela {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .estrela:hover,
+  .estrela:hover ~ .estrela {
+    color: gold;
+  }
+  
