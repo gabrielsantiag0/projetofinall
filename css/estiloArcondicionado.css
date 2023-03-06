@@ -1,11 +1,102 @@
 body{
     margin: 0%;
     background-color: #f1f1f1f1;
+    
+ font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
 }
-.primeiradiv{
+/* header inicio */
+/* favorito */
+.favorite-btn {
+    background-color: #ffffff;
+    border: none;
+    color: #555555;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .favorite-btn:hover {
+    background-color: #f7f7f7;
+    color: #555555;
+  }
+  
+  .fa-heart-o {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .fa-heart {
+    color: #ff0000;
+  }
+  
+/* favorito */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    header{
+        background-color: white;
+    }
+.conteudoMenu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+#logo{
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+.espaco{
     margin-top: 25px;
-  display: grid;
-  grid-template-columns: 70% 30%;
+}
+#textoheader{
+    margin: 15px;
+    padding: 10px;
+    text-align: right;
+    font-size: 25px;
+}
+
+#home{
+    padding: 5px;
+}
+.conteudoMenu a{
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+#textoheader a:hover{
+    padding: 10px;
+    border: 1px solid black;
+}
+.produto button{
+   margin-left: 15px;
+    width: 150px;
+}
+/* header final */
+/*-----inicio parte da direita-----*/
+
+.favoritoecompartilhar a{
+    color: black;
+}
+
+.primeiradiv{
+    margin-left: 150px;
+    margin-top: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 70% 30%;
 }
 .informacao{
     display: grid;
@@ -30,9 +121,7 @@ hr{
     grid-template-rows: 5vh 30vh 10vh;
 
 }
-.imgproduto{
-    max-width: max-content;
-}
+
 .imgproduto{
     position: relative;
     display: flex;
@@ -45,59 +134,17 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border: 3px solid blue;
 }
-.calcular{
-    border-radius: 15px;
-    border: 2px solid green;
-    display: grid;
-    grid-template-rows: 10vh 20vh;
-}
+/*-----final parte da direita-----*/
 
-.textocalcular p{
+/*-------inicio parte do meio---*/
+.nomeproduto{
     margin-left: 15px;
 }
-.outrosprodutos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.outrosprodutos div{
-    border: 1px solid rebeccapurple;
-}
-.botao{
-    margin: 5px;
-    border: 1px solid rgb(143, 134, 134);
-}
-.botao p{
-    margin-left: 15px;
-}
-.calcularfrete{
-    margin-left: 15px;
-    width: 300px;
-    height: 40px;
-}
-.ok{
-    width: 150px;
-    height: 40px;
-}
-.ok button{
-    
-    border-radius: 5px;
-    background-color: red;
-
-}
-.botaocompra{
+.nomeproduto h1{
     display: flex;
-    justify-content: space-around
-}
-.comprar{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-.comprar button{
-    width: 200px;
-    height: 50px;
-    background-color: red;
-    border-radius: 5px;
+    justify-items: center;
+    margin-top: 25px;
+    font-size: 22px;
 }
 .estrela {
     font-size: 30px;
@@ -109,4 +156,113 @@ hr{
   .estrela:hover ~ .estrela {
     color: gold;
   }
-  
+.estrelaavaliacao{
+    display: flex;
+    justify-items: center;
+}
+.estrelaavaliacao p{
+    font-size: 23px;
+    margin-left: 15px;
+}
+.dica{
+    display: flex;
+    justify-items: center;
+    font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: 25px;
+}
+.dica h1{
+    display: flex;
+    justify-items: center;
+}
+.link a{
+display: flex;
+justify-items: center;
+color: black;
+}
+hr{
+    margin-left: 5px;
+    width: 450px;
+}
+/* parte meio final */
+/* parte lateral direita inicio */
+.direita{
+    background-color: white;  
+    margin-right: 150px;
+}
+.direita h1{
+    padding: 5px;
+}
+.preco{
+    display: flex;
+    padding: 15px;
+    background-color: white;
+}
+.pix{
+    margin: 5px;
+    font-size: 16px;
+}
+.verde{
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 25px;
+    background-color: rgb(77, 123, 9);
+}
+.verde p{
+    color: white;
+}
+.cartao{
+    margin: 5px;
+}
+.botao-compra {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(212, 11, 11);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.maispagamentos{
+    margin: 5px;
+}
+.maispagamentos a{
+    color: black;
+}
+.compraa{
+    margin: 15px;
+    border: 2px solid #555555;
+    border-radius: 6px;
+}
+.compraa h6{
+    font-size: 19px;
+    margin: 5px;
+}
+.calcula button{
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: white;
+}
+.cep input{
+    padding: 5px;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+}
+.ok button{
+    border: 2px solid red;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
+.ok p{
+    padding-top: 5px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.calcula{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+/* parte lateral direita final */

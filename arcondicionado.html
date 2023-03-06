@@ -8,10 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="conteudoMenu">
+            <nav id="logo"><img src="img/logoPequena.png" alt="Logo"></nav>
+                <div class="espaco">
+                 <a id="textoheader"><a id="home" href="index.html"> Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a>
+                 </div></div>             
+        </div>
+    </header>
     <div class="primeiradiv">
         <div class="informacao">
             <div class="produto">
-                <div class="texto"><a href="">favorita</a> &nbsp; &nbsp;&nbsp;<a href="">Compartilhar</a> </div>
+                <div class="favoritoecompartilhar">
+                    <button id="favorite-btn" class="favorite-btn">
+                        <i id="favorite-icon" class="fa fa-heart-o"></i>Favorito
+                      </button> 
+                      <a href="">compartilhar</a>  
+                </div>                                             
                 <div class="imgproduto"><img src="img/arcondiconadooo.jpg" alt=""></div>
                 <div class="mesmoprodutoimgdiferentes">
                     <div><img src="" alt=""></div>
@@ -23,14 +36,10 @@
             </div>
 
 
-            <div><h1> Ar Condicionado Split Electrolux 9000 BTUs Ecoturbo VI09F/VE09F - 220v  </h1> <br>
+            <div class="nomeproduto"><h1> Ar Condicionado Split Electrolux 9000 <br> BTUs Ecoturbo VI09F/VE09F - 220v</h1> <br>
 
-                <div class="estrelas"><img src="" alt=""></div>
-
-            <p> <b> Já sabe qual ar condicionado comprar? </b><br>
-
-                Descubra qual é o ideal para deixar seu ambiente geladinho!</p>
-                <id class="estrelaavaliacao">
+           
+                <div class="estrelaavaliacao">
                     <div>
                         <span class="estrela" data-valor="1">&#9733;</span>
                         <span class="estrela" data-valor="2">&#9733;</span>
@@ -38,32 +47,63 @@
                         <span class="estrela" data-valor="4">&#9733;</span>
                         <span class="estrela" data-valor="5">&#9733;</span>
                       </div>                      
-
-                </id>
-
-                <a href="#">Ver Dica</a>
-                <hr><br>
-                <p>Sinta todo o bem-estar e conforto que o Ar-Condicionado Split 12000 BTUs PAC12000TFM12 da Philco pode proporcionar a você! <br> Ele conta com diversas funções para tornar o seu dia a dia mais agradável. <br> Com a função Timer, você pode ...</p><br>
-                <a href="#">Mais informações</a><br><br>
-                <a href="#">Politica de troca e devolução</a>
+                            <p>4.2&nbsp;(51 avaliações)</p>
+                </div>
+               <div class="dica">
+                <h1>Já sabe qual ar condicionado&nbsp;<b>comprar?</b></h1>
+               </div>
+               <div class="geladinho">
+                <h1>Descubra qual é o ideal para deixar seu ambiente geladinho!</h1>
+               </div>
+               <div class="link"><a href="">Ver dica</a>
+                    <hr>
+                <p>
+                    Sinta todo o bem-estar e conforto que o Ar-Condicionado Split 12000 BTUs <br> PAC12000TFM12 da Philco pode proporcionar a você! <br> Ele conta com diversas funções para tornar o seu dia a dia mais agradável. <br> Com a função Timer, você pode ...
+                </p>
+                <a href="">Mais informações</a>
+                <br>
+                <a href="">Políticas de troca e devolução</a>
             </div>
-    </div>
-        <div class="compra"><p><h3>R$ 1.698,05
-            12%</h3>
-            <h2>R$ 1.494,28</h2>
-          <b> no Pix</b></p>
-        <p>R$ 1.698,05 em até 8x de R$ 212,25</p>
-        <a href="#">Mais Formas de Pagamento</a>
-        <div class="botao">
-            <p>calcular frete</p>
-        <div class="botaocompra">
-            <div class="calcularfrete"><button type="button" value="Digite seu Cpf">Digite seu Cpf</button></div>
-            <div class="ok"><button type="button" value="OK">OK</button></div>
-        </div>
-        </div>
-        <div class="comprar"><button type="button" value="Comprar">Comprar</button></div>
-        <div><p>Este produto é vendido e entregue por FRIOPEÇAS. A <b>G.toy</b>  garante a sua compra, do pedido à entrega. <a href="#">saiba mais</a></p></div>
+            </div>
 
+            
+            
+        </div>
+        <div class="direita">
+            <div class="preco"><h5><s>R$ 1.668,00</s></h5>&nbsp;
+        <div class="verde"><p>&nbsp;&darr;&nbsp;12%&nbsp;</p></div> <br>
+            </div>
+           <div class="pix"><h1>R$ 1.467,84</h1><p><b>no Pix</b></p></div>
+          <div class="cartao"><h5>R$ 1.765,97 em até 8x de R$ 220,74 <p>no cartao</p></h5></div> 
+            <div class="maispagamentos"><a href="">Mais formas de pagamentos</a></div>
+
+            <div class="compraa">
+               <h6>calcular frete e prazo</h6>
+                <div class="calcula">
+                    <div class="cep">
+                        <label for="" >
+                            <div class="inputfieldi" >
+                                <input type="text" id="Mensagem" name="Mensagem" value="Digite seu CEP">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="ok">
+                        <button id="ok">
+                           <p>ok</p> 
+                        </button>
+                    </div>
+                </div>
+               
+            </div>
+
+
+        <button class="botao-compra" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+
+        </div>
+     </div>
+
+            
+   
 </body>
 <script src="js/estilo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
