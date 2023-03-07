@@ -2,7 +2,10 @@
 /*----- nav FINAL----------*/
 nav{
 
-    /* cursor:url(../img/neve.cur),pointer; */
+    cursor:url(../img/neve.cur),pointer;
+}
+html{
+    scroll-behavior: smooth;
 }
 /*----- header INICIO------ */
 /*--------- botao INICIO-----*/
