@@ -319,6 +319,7 @@ text-decoration: none;
     font-size: 15px;
 }
 .primeiraimg img{
+    margin-top: 5px;
     width: 105px;
     
 }
@@ -359,6 +360,7 @@ text-decoration: none;
     font-size: 15px;
 }
 .quartimg img{
+    margin-top: 5px;
     width: 105px;
 }
 .ultimaimg a{
