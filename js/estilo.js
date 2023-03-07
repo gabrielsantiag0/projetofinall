@@ -48,5 +48,16 @@ app.controller('meuController', function($scope) {
     $scope.multisplit = false;
     $scope.energiasolar = false;
   });
+{
+  var imgatual ="img/arcondiconadooo.jpg";
+  var img1 ="img/arcondiconadooo.jpg";
+  var img2 ="img/arcondicionadoo2.jpg";
+  var img3 ="img/arcondicionadooo4.jpg";
+  var img4 ="img/arcondicionadooo5.png";
 
-  
+  function troca(){
+    document.getElementById("imgproduto").src = imgatual;
+    let aux = imgatual;
+    img2 = aux;
+  }
+}
