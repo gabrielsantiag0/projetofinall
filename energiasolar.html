@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/energiasolar.css">
+    <title>Document</title>
+</head>
+<body ng-app="meuApp" ng-controller="meuController">
+    <header>
+        <div class="conteudoMenu">
+            <nav id="logo"><img src="img/logoPequena.png" alt="Logo"></nav>
+                <div class="espaco">
+                 <a id="textoheader"><a id="home" href="index.html"> Home</a> <a href="#">Serviços</a> <a href="#">Sobre nós</a> <a href="#">Produtos</a> <a href="#">Contatos</a>
+                 </div></div>             
+        </div>
+    </header>
+    <div class="primeiradiv">
+        <div class="informacao">
+            <div class="produto">
+                <div class="favoritoecompartilhar">
+                    <button id="favorite-btn" class="favorite-btn">
+                        <i id="favorite-icon" class="fa fa-heart-o"></i>Favorito
+                      </button> 
+                      <a href="">compartilhar</a>  
+                </div>                                             
+                <div class="imgproduto" ng-show="arcondicionado"><img src="img/energiasolar5.jpg" alt=""></div>
+                <div class="mesmoprodutoimgdiferentes">
+                    <div class="img5ars" ng-show="arcondicionado">
+                        <div>
+                            <a href="arcondicionado.html"><img src="img/energiasolar1.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <img src="img/energiasolar2.jpeg" alt="">
+                        </div>
+                        <div >
+                            <img src="img/energiasolar3.jpg" alt="">
+                        </div>
+                        <div >
+                            <img src="img/energiasolar4.jpeg" alt="">
+                        </div>
+                        <div >
+                            <img src="img/energiasolar5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="nomeproduto"><h1> Ar Condicionado Energia Solar 9000 <br> VI09F/VE09F - 220v</h1> <br>
+
+           
+                <div class="estrelaavaliacao">
+                    <div>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                      </div>                      
+                            <p>4.2&nbsp;(51 avaliações)</p>
+                </div>
+               <div class="dica">
+                <h1>Já sabe qual ar condicionado&nbsp;<b>comprar?</b></h1>
+               </div>
+               <div class="geladinho">
+                <h1>Descubra qual é o ideal para deixar seu ambiente geladinho!</h1>
+               </div>
+               <div class="link"><a href="">Ver dica</a>
+                    <hr>
+                <p>
+                    Sinta todo o bem-estar e conforto que a Energia Solar Inverter 12000 BTUs <br> PAC12000TFM12 da Philco pode proporcionar a você! <br> Ele conta com diversas funções para tornar o seu dia a dia mais agradável. <br> Com a função Timer, você pode ...
+                </p>
+                <a href="">Mais informações</a>
+                <br>
+                <a href="">Políticas de troca e devolução</a>
+            </div>
+            </div>
+
+            
+            
+        </div>
+        <div class="direita">
+            <div class="preco"><h5><s>R$ 1.668,00</s></h5>&nbsp;
+        <div class="verde"><p>&nbsp;&darr;&nbsp;12%&nbsp;</p></div> <br>
+            </div>
+           <div class="pix"><h1>R$ 1.467,84</h1><p><b>no Pix</b></p></div>
+          <div class="cartao"><h5>R$ 1.765,97 em até 8x de R$ 220,74 <p>no cartao</p></h5></div> 
+            <div class="maispagamentos"><a href="">Mais formas de pagamentos</a></div>
+
+            <div class="compraa">
+               <h6>calcular frete e prazo</h6>
+                <div class="calcula">
+                    <div class="cep">
+                        <label for="" >
+                            <div class="inputfieldi" >
+                                <input type="text" id="Mensagem" name="Mensagem" value="Digite seu CEP">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="ok">
+                        <button id="ok">
+                           <p>ok</p> 
+                        </button>
+                    </div>
+                </div>
+               
+            </div>
+
+<div class="Carrinho">
+        <button class="botao-compra" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+    </div>
+        </div>
+     </div>
+
+            <div class="semelhantes">
+                <h1> você também pode gostar desses</h1>
+            </div>
+   <div class="produtossemelhantes">
+    <div class="primeiraimg">
+        <a href="arcondicionado.html">
+        <img src="img/arcondiconadooo.jpg" alt="">
+        <div><p>AR CONDICIONADO TCL...</p>
+            <div class="estrelaavaliacaosemelhante">
+                <div>
+                    <span class="estrela" data-valor="1">&#9733;</span>
+                    <span class="estrela" data-valor="2">&#9733;</span>
+                    <span class="estrela" data-valor="3">&#9733;</span>
+                    <span class="estrela" data-valor="4">&#9733;</span>
+                    <span class="estrela" data-valor="5">&#9733;</span>
+                  </div>                      
+                        <p>&nbsp;(51 avaliações)</p>
+                       <div class="reais">
+                        <h5><s>R$ 1.668,00</s></h5> &nbsp;
+                        <div class="doseverde">&darr; 12%</div>
+                        </div> 
+                        <div class="dollar">
+                            <h6>R$ 1.467,84</h6><p><b>no Pix</b></p>
+                        </div>           
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="segundaimg">
+        <a href="arcondicionado.html">
+        <img src="img/arcondicionadoo2.jpg" alt="">
+        <div><p>AR CONDICIONADO SIMPLY...</p>
+            <div class="estrelaavaliacaosemelhante">
+                <div>
+                    <span class="estrela" data-valor="1">&#9733;</span>
+                    <span class="estrela" data-valor="2">&#9733;</span>
+                    <span class="estrela" data-valor="3">&#9733;</span>
+                    <span class="estrela" data-valor="4">&#9733;</span>
+                    <span class="estrela" data-valor="5">&#9733;</span>
+                  </div>                      
+                        <p>&nbsp;(60 avaliações)</p>
+                        <div class="reais">
+                            <h5><s>R$ 1.668,00</s></h5> &nbsp;
+                            <div class="doseverde">&darr; 12%</div>
+                            </div> 
+                            <div class="dollar">
+                                <h6>R$ 1.467,84</h6><p><b>no Pix</b></p>
+                            </div>           
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="terceiraimg">
+        <a href="arcondicionado.html">
+        <img src="img/arcondicionadooo3.jpg" alt="">
+        <div><p>AR CONDICIONADO PHILLIP...</p>
+            <div class="estrelaavaliacaosemelhante">
+                <div>
+                    <span class="estrela" data-valor="1">&#9733;</span>
+                    <span class="estrela" data-valor="2">&#9733;</span>
+                    <span class="estrela" data-valor="3">&#9733;</span>
+                    <span class="estrela" data-valor="4">&#9733;</span>
+                    <span class="estrela" data-valor="5">&#9733;</span>
+                  </div>                      
+                        <p>&nbsp;(150 avaliações)</p>
+                        <div class="reais">
+                            <h5><s>R$ 1.668,00</s></h5> &nbsp;
+                            <div class="doseverde">&darr; 12%</div>
+                            </div> 
+                            <div class="dollar">
+                                <h6>R$ 1.467,84</h6><p><b>no Pix</b></p>
+                            </div>           
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="quartimg">
+        <a href="arcondicionado.html">
+        <img src="img/arcondicionadooo4.jpg" alt="">
+        <div><p>AR CONDICIONADO COP...</p>
+            <div class="estrelaavaliacaosemelhante">
+                <div>
+                    <span class="estrela" data-valor="1">&#9733;</span>
+                    <span class="estrela" data-valor="2">&#9733;</span>
+                    <span class="estrela" data-valor="3">&#9733;</span>
+                    <span class="estrela" data-valor="4">&#9733;</span>
+                    <span class="estrela" data-valor="5">&#9733;</span>
+                  </div>                      
+                        <p>&nbsp;(100 avaliações)</p>
+                        <div class="reais">
+                            <h5><s>R$ 1.668,00</s></h5> &nbsp;
+                            <div class="doseverde">&darr; 12%</div>
+                            </div> 
+                            <div class="dollar">
+                                <h6>R$ 1.467,84</h6><p><b>no Pix</b></p>
+                            </div>           
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="ultimaimg">
+        <a href="arcondicionado.html">
+        <img src="img/arcondicionadooo5.png" alt="">
+        <div><p>AR CONDICIONADO AGRATO...</p>
+            <div class="estrelaavaliacaosemelhante">
+                <div>
+                    <span class="estrela" data-valor="1">&#9733;</span>
+                    <span class="estrela" data-valor="2">&#9733;</span>
+                    <span class="estrela" data-valor="3">&#9733;</span>
+                    <span class="estrela" data-valor="4">&#9733;</span>
+                    <span class="estrela" data-valor="5">&#9733;</span>
+                  </div>                      
+                        <p>&nbsp;(200 avaliações)</p>
+                        <div class="reais">
+                            <h5><s>R$ 1.668,00</s></h5> &nbsp;
+                            <div class="doseverde">&darr; 12%</div>
+                            </div> 
+                            <div class="dollar">
+                                <h6>R$ 1.467,84</h6><p><b>no Pix</b></p>
+                            </div>           
+            </div>
+        </div>
+    </a>
+    </div>
+   </div>
+</body>
+<script src="js/inverter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
