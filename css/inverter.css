@@ -295,7 +295,11 @@ hr{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 25px;   
     }
-
+.produtossemelhantes a{
+    
+color: black;
+text-decoration: none;
+}
 .ultimaimg{
     margin-right: 140px;
      background-color: white;
@@ -339,5 +343,9 @@ hr{
     background-color: white;
     text-align: center;
     font-size: 15px;
+}
+.ultimaimg a{
+    color: black;
+    text-decoration: none;
 }
 /* final vc tambem pode gostar desses */

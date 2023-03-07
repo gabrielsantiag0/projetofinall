@@ -40,3 +40,13 @@ favoriteBtn.addEventListener('click', function() {
     function adicionarAoCarrinho() {
 			// Adiciona o item ao carrinho de compras
 			alert("Produto adicionado ao carrinho!");}
+
+      var app = angular.module('meuApp', []);
+app.controller('meuController', function($scope) {
+    $scope.arcondicionado = true;
+    $scope.inverter = false;
+    $scope.multisplit = false;
+    $scope.energiasolar = false;
+  });
+
+  

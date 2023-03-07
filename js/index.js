@@ -1,3 +1,39 @@
+var app = angular.module('meuApp', []);
+app.controller('meuController', function($scope) {
+    $scope.arcondicionado = true;
+    $scope.inverter = false;
+    $scope.multisplit = false;
+    $scope.energiasolar = false;
+    
+    $scope.funcaoArcondicionado = function() {
+        $scope.arcondicionado = true;
+        $scope.inverter = false;
+        $scope.energiasolar = false;
+        $scope.multisplit = false;
+    }
+
+    $scope.funcaoInverter = function() {
+        $scope.inverter = true;
+        $scope.arcondicionado = false;
+        $scope.energiasolar = false;
+        $scope.multisplit = false;
+    }
+
+    $scope.funcaoMultisplit = function() {
+        $scope.multisplit = true;
+        $scope.arcondicionado = false;
+        $scope.inverter = false;
+        $scope.energiasolar = false;
+    }
+
+    $scope.funcaoEnergiasolar = function() {
+        $scope.energiasolar = true;
+        $scope.arcondicionado = false;
+        $scope.inverter = false;
+        $scope.multisplit = false;
+    }		
+});
+
 // Exibe o botão de voltar ao topo quando a página é rolada
 window.onscroll = function() {
     mostrarBotaoVoltarTopo()
