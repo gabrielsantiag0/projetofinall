@@ -296,22 +296,31 @@ hr{
         gap: 25px;   
     }
 .produtossemelhantes a{
-    color: black;
-    text-decoration: none;
+    
+color: black;
+text-decoration: none;
 }
 .ultimaimg{
-    margin-right: 140px;
+    margin-right: 80px;
      background-color: white;
     text-align: center;
     font-size: 15px;
 }
 .estrelaavaliacaosemelhante p{
     font-size: 15px;
+}
+.produtossemelhantes image{
+    width: 105px;
+    height: 10px;
 }    
 .primeiraimg{
     background-color: white;
     text-align: center;
     font-size: 15px;
+}
+.primeiraimg img{
+    width: 105px;
+    
 }
 .reais{
     margin-left: 15px;
@@ -333,14 +342,34 @@ hr{
     text-align: center;
     font-size: 15px;
 }
+.segundaimg img{
+    width: 105px;
+}
 .terceiraimg{
     background-color: white;
     text-align: center;
     font-size: 15px;
 }
+.terceiraimg img{
+    width: 105px;
+}
 .quartimg{
     background-color: white;
     text-align: center;
     font-size: 15px;
+}
+.quartimg img{
+    width: 105px;
+}
+.ultimaimg a{
+    color: black;
+    text-decoration: none;
+}
+.ultimaimg{
+    width: 160px;
+}
+.ultimaimg img{
+    width: 150px;
+    height: 100px;
 }
 /* final vc tambem pode gostar desses */
